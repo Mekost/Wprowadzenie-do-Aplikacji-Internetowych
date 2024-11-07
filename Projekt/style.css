@@ -1,0 +1,206 @@
+body {
+    width: 100%;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+header {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+}
+
+html {
+    min-height: 100%;
+    background: url(img//Background/bloodborne-01.jpg);
+    background-size: contain;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.75);
+    display: flex;
+    color:white;
+  }
+
+nav {
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+    justify-content: right;
+
+}
+
+.centering-sign {
+    height: 200px;
+    width: auto;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.bloodborne-sign {
+    display: flex;
+    justify-self: center;
+}
+    
+
+.welcome {
+    display: flex;
+    color: white;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: flex-start;
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+    width: 35rem;
+}
+
+.test {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    margin: 5em 0;
+}
+
+.introduction {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: rgba(82, 82, 82, 0.726);
+}
+
+.obrazek {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hunters-dream {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: auto;
+}
+
+.hunters-dream:hover {
+    color: black;
+    height: 250px;
+}
+
+.intro-text {
+    margin-top: 100px;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.hello {
+    display: flex;
+}
+
+.yharnam {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(98, 98, 98, 0.75);
+}
+
+.ruszaj-sie {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.example-img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    /* nvm, działa */
+
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.axe {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.axe-title {
+    align-self: center;
+    font-size: 3rem;
+}
+
+.axe-description {
+    width: 15rem;
+    margin-right: 100px;
+}
+
+.axe-icon {
+    height: 15rem;
+    width: 15rem;
+    align-self: flex-end;
+    
+}
+
+.axe-presentation {
+    height: 25rem;
+    width: 32rem;
+    object-fit: cover;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.cleaver {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cleaver-title {
+    align-self: center;
+    font-size: 3rem;
+}
+
+.cleaver-description {
+    width: 15rem;
+    margin-right: 100px;
+}
+
+.cleaver-icon {
+    height: 15rem;
+    width: 15rem;
+    align-self: flex-end;
+    
+}
+
+.cleaver-presentation {
+    height: 25rem;
+    width: 32rem;
+    object-fit: cover;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+footer {
+    color: white;
+    align-self: flex-end;
+}
