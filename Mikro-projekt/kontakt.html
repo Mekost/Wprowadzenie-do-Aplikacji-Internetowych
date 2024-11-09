@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaborn</title>
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="stylesheet" href="queries.css">
+    <link rel="icon" type="mark" href="img/Misc/hunters-mark-miniature-for-card.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1 class="welcome">Guide to Yharnam</h1>
+        <div class="centering-sign" onclick="">
+            <img src="img//Main Page/bloodborne-hunters-mark-chapman-aiden-transparent.png"
+            class="bloodborne-sign"
+            height="200px"
+            width="200px"/>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="galeria.html">Gallery</a>
+            <a href="kontakt.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-info">
+            <h2 class="contact">CONTACT</h2>
+            <p class="contact-description">
+                Are you interested in working with other experienced hunters?
+                Or maybe you need help with surviving the night safely?
+                No matter what you want to ask, leave us your message and our
+                messengers will deliver it quickly.
+                Remember: A hunter must hunt.
+            </p>
+                <img src="img/Contact/Messengers_with_scroll.webp"
+                class="messengers-photo" />
+        </div>
+
+
+        <div class="form">
+            <h3>Your mail address:</h3>
+            <input type="email" placeholder="Type your email adress here:" size="40" id="mail" class="e-mail" 
+            required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+            <h3>Choose your topic:</h3>
+            <select name="topic">
+                <option>Select...</option>
+                <option>Question</option>
+                <option>General</option>
+                <option>Something else</option>
+            </select>
+            <div></div>
+            <textarea placeholder="Type your message here..." rows="10" cols="60" required class="area"></textarea>
+            <input type="submit" value="Send" id="submitbutton">
+        </div>
+    </main>
+    <script src="js/kontakt.js"></script>
+</body>
+</html>

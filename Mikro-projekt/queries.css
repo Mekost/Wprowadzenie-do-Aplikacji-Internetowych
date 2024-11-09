@@ -1,0 +1,210 @@
+@media (max-width: 1580px) {
+    .axe-title, .cleaver-title, .cane-title {
+        font-size: 2rem;
+    }
+    .axe-presentation, .cleaver-presentation, .cane-presentation {
+        width: 30rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 1480px) {
+    a {
+        font-size: 1.5rem;
+        margin: 1.5rem 1.5rem;
+    }
+    .contact {
+        font-size: 2rem;
+    }
+    .contact-description {
+        font-size: 1.2rem;
+        width: 30rem;
+    }
+}
+
+@media (max-width: 1380px) {
+    .hunters-dream {
+        width: 20rem;
+        /* height: auto; */
+    }
+    .doll {
+        font-size: 2rem;
+    }
+    .gehrman {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1275px) {
+    a {
+        font-size: 1.2rem;
+        margin: 1.2rem 1.2rem;
+    }
+}
+
+@media (max-width: 1225px) {
+    .axe-title, .cleaver-title, .cane-title {
+        font-size: 2rem;
+    }
+    .axe-presentation, .cleaver-presentation, .cane-presentation {
+        width: 30rem;
+        height: auto;
+    }
+    .axe-icon, .cleaver-icon, .cane-icon {
+        height: 7.5rem;
+        width: 7.5rem;
+    }
+
+    .axe-description, .cleaver-description, .cane-description {
+        font-size: 0.75rem;
+    }
+
+    .gehrman {
+        width: 25rem;
+        font-size: 0.9rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+        margin: 0.9rem 0.9rem;
+    }
+
+    .centering-sign {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .axe-title, .cleaver-title, .cane-title {
+        font-size: 1.3rem;
+    }
+    .axe-presentation, .cleaver-presentation, .cane-presentation {
+        width: 20rem;
+        height: auto;
+    }
+
+    .axe, .cane, .cleaver {
+        margin-top: 4rem;
+    }
+
+    .image {
+        width: 15rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1045px) {
+    .welcome {
+        font-size: 30px;
+        width: 15rem;
+    }
+    .bro-gameplay {
+        width: 25rem;
+    }
+    .contact {
+        font-size: 1.2rem;
+    }
+    .contact-description {
+        font-size: 0.8rem;
+        width: 20rem;
+    }
+
+    
+}
+
+@media (max-width: 840px) {
+    .axe-icon, .cleaver-icon, .cane-icon {
+        height: 4rem;
+        width: 4rem;
+    }
+    .axe-description, .cleaver-description, .cane-description {
+        font-size: 0.5rem;
+    }
+
+    .axe-presentation, .cleaver-presentation, .cane-presentation {
+        width: 13rem;
+        height: auto;
+    }
+
+    .example-img {
+        height: 15rem;
+        width: 30rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .obrazek {
+        width: 15rem;
+        height: auto;
+    }
+    .doll {
+        font-size: 1.4rem;
+        padding-left: 0.5rem;
+    }
+    .gehrman {
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+    }
+
+    .introduction {
+        height: 25rem;
+    }
+
+    .image {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 725px) {
+    .gehrman {
+        width: 25rem;
+        font-size: 0.9rem;
+    }
+
+    a {
+        font-size: 0.6rem;
+        margin: 0.6rem 0.6rem;
+    }
+
+    .centering-sign {
+        height: 70px;
+        width: 70px;
+    }
+
+    .welcome {
+        font-size: 1rem;
+        width: 15px;
+        padding-left: 2rem;
+    }
+    .axe-title, .cleaver-title, .cane-title {
+        font-size: 0.9rem;
+    }
+    .axe-presentation, .cleaver-presentation, .cane-presentation {
+        width: 9rem;
+        height: auto;
+    }
+    .axe-icon, .cleaver-icon, .cane-icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .axe-description, .cleaver-description, .cane-description {
+        font-size: 0.5rem;
+    }
+
+    .contact {
+        font-size: 0.8rem;
+        margin-left: 1rem;
+    }
+    .contact-description {
+        font-size: 0.7rem;
+        width: 20rem;
+    }
+    .messengers-photo {
+        height: 10rem;
+    }
+}

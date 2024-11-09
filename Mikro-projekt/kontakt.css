@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    background: url(img//Background/bloodborne-01.jpg);
+    background-size: contain;
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.75);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    /* align-self: flex-start; */
+    justify-content: space-between;
+}
+
+html {
+    min-height: 100%;
+    
+    display: flex;
+    color:white;
+}
+
+
+nav {
+    /* width: 100%; */
+    /* display: flex;
+    align-self: flex-start;
+    justify-content: right; */
+    padding-right: 5rem;
+    margin-top: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 3rem 3rem;
+    font-size: 2rem;
+}
+
+a:hover {
+    text-decoration: dashed white 5px underline;
+}
+
+.centering-sign {
+    height: 200px;
+    width: 200px;
+    /* display: flex; */
+    /* justify-self: flex-end;
+    align-self: flex-end;
+    align-items: center; */
+}
+
+.bloodborne-sign {
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-end;
+    align-self: flex-end; */
+}
+    
+
+.welcome {
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    font-size: 60px;
+    /* margin: 0px;
+    padding: 0px; */
+    padding-left: 5rem;
+    margin-top: 1rem;
+    width: 35rem;
+}
+
+.contact-info {
+    height: 18.75rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    background-color: rgba(71, 61, 61, 0.476);
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid white 3px;
+    border-bottom: solid white 3px;
+}
+
+.contact {
+    font-size: 4rem;
+    font-weight: none;
+    margin-left: 2rem;
+}
+
+.contact-description {
+    width: 50rem;
+    font-size: 1.5rem;
+}
+
+
+.messengers-photo {
+    height: 18.75rem;
+}
+
+.form {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    /* width: 40rem; */
+    align-items: start;
+}
+
+.email {
+    width: 40rem;
+    margin: 0;
+}
+
+input:invalid {
+    border: 2px dashed red;
+  }
+  
+  /* input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+  } */
+  
+  input:valid {
+    border: 2px solid black;
+  }
+
+  .area:invalid {
+    border: 2px dashed red;
+  }
+  
+  /* input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+  } */
+  
+  .area:valid {
+    border: 2px solid black;
+  }

@@ -1,0 +1,344 @@
+body {
+    width: 100%;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    background: url(img//Background/bloodborne-01.jpg);
+    background-size: contain;
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.75);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    /* align-self: flex-start; */
+    justify-content: space-between;
+}
+
+html {
+    min-height: 100%;
+    
+    display: flex;
+    color:white;
+  }
+
+nav {
+    /* width: 100%; */
+    /* display: flex;
+    align-self: flex-start;
+    justify-content: right; */
+    padding-right: 5rem;
+    margin-top: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 3rem 3rem;
+    font-size: 2rem;
+}
+
+a:hover {
+    text-decoration: dashed white 5px underline;
+}
+
+.centering-sign {
+    height: 200px;
+    width: 200px;
+    /* display: flex; */
+    /* justify-self: flex-end;
+    align-self: flex-end;
+    align-items: center; */
+}
+
+.bloodborne-sign {
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-end;
+    align-self: flex-end; */
+}
+    
+
+.welcome {
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    font-size: 60px;
+    /* margin: 0px;
+    padding: 0px; */
+    padding-left: 5rem;
+    margin-top: 1rem;
+    width: 35rem;
+}
+
+.test {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    margin: 5em 0;
+}
+
+.introduction {
+    width: 100%;
+    height: 31.25rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(71, 61, 61, 0.476);
+    /* justify-content: flex-end; */
+    margin-top: 2rem;
+    border-top: solid white 3px;
+    border-bottom: solid white 3px;
+}
+
+.doll {
+    font-size: 3rem;
+    /* font-style: italic; */
+    padding: 2rem;
+}
+
+.gehrman {
+    font-size: 1.4rem;
+    width: 50rem;
+    justify-content: flex-end;
+    justify-self: flex-start;
+    align-self: flex-end;
+    padding-left: 2rem;
+
+}
+
+.obrazek {
+    display: flex;
+    justify-self: flex-end;
+    justify-content: center;
+    align-self: center;
+    height: 18.75rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.hunters-dream {
+    /* align-self: center; */
+    height: 18,75rem;
+    width: 33.33rem;
+    border-radius: 2rem;
+    transition: transform 0.3s ease-in-out
+}
+
+.hunters-dream:hover {
+    color: black;
+    /* height: 250px; */
+    border-radius: 2rem;
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+.intro-text {
+    margin-top: 100px;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.hello {
+    display: flex;
+}
+
+.yharnam {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(71, 61, 61, 0.476);
+    border-top: solid white 3px;
+    border-bottom: solid white 3px;
+    margin-top: 7rem;
+}
+
+.ruszaj-sie {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.example-img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    /* nvm, działa */
+
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+.axe {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: solid white 3px;
+    border-bottom: solid white 3px;
+    margin-top: 8rem;
+    background-color: rgba(71, 61, 61, 0.476);
+
+}
+
+.axe-title {
+    display: flex;
+    align-self: center;
+    font-size: 3rem;
+    /* margin-left: 0; */
+}
+
+.axe-description {
+    width: 15rem;
+    align-self: center;
+    /* margin-left: 4rem; */
+}
+
+.axe-icon {
+    height: 15rem;
+    width: 15rem;
+    align-self: center;
+    /* margin-left: 4rem; */
+    
+}
+
+.axe-presentation {
+    height: 25rem;
+    width: 44.44rem;
+    object-fit: cover;
+    justify-content: center;
+    align-self: flex-end;
+    /* margin-left: 4rem; */
+    border: 2px solid white;
+}
+
+.cleaver {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    border-top: solid white 3px;
+    border-bottom: solid white 3px;
+    margin-top: 8rem;
+    background-color: rgba(71, 61, 61, 0.476);
+
+}
+
+.cleaver-title {
+    display: flex;
+    align-self: center;
+    font-size: 3rem;
+}
+
+.cleaver-description {
+    width: 15rem;
+    align-self: center;
+}
+
+.cleaver-icon {
+    height: 15rem;
+    width: 15rem;
+    align-self: center;
+    
+}
+
+.cleaver-presentation {
+    height: 25rem;
+    width: 44.44rem;
+    object-fit: cover;
+    justify-content: center;
+    align-self: flex-end;
+    /* margin-left: 4rem; */
+    border: 2px solid white;
+}
+
+.cane {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: solid white 3px;
+    border-bottom: solid white 3px;
+    margin-top: 8rem;
+    background-color: rgba(71, 61, 61, 0.476);
+
+}
+
+.cane-title {
+    display: flex;
+    align-self: center;
+    font-size: 3rem;
+}
+
+.cane-description {
+    width: 15rem;
+    align-self: center;
+}
+
+.cane-icon {
+    height: 15rem;
+    width: 15rem;
+    align-self: center;
+ 
+}
+
+.cane-presentation {
+    height: 25rem;
+    width: 44.44rem;
+    object-fit: cover;
+    justify-content: center;
+    align-self: flex-end;
+    /* margin-left: 4rem; */
+    border: 2px solid white;
+}
+
+/* .axe, .cane, .cleaver {
+    overflow: hidden;
+} */
+
+/* .cleaver-test, .axe-test, .cane-test {
+    height: 15rem;
+    width: 15rem;
+    overflow: hidden;
+    /* border: 3px solid white; */
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+/* } */
+
+/* .axe-icon, .cane-icon, .cleaver-icon {
+    width: 15rem;
+    max-width: 33.33rem;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    align-self: center;
+    justify-content: center;
+    
+}
+
+.axe-icon:hover, .cane-icon:hover, .cleaver-icon:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+} */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
