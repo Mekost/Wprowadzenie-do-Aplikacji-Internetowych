@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .data-input {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 30rem;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Generator haseł</h1>
+    <div class="data-input">
+        <label for="minLength">Minimalna długość hasła:</label>
+        <input type="number" id="minLength" placeholder="Wprowadź minimalną długość" min="1">
+    </div>
+    <div class="data-input">
+        <label for="maxLength">Maksymalna długość hasła:</label>
+        <input type="number" id="maxLength" placeholder="Wprowadź maksymalną długość" min="1">
+    </div>
+    <div class="data-input">
+        <label> Czy hasło ma zawierać wielkie litery? <input type="checkbox" id="includeUppercase"></label>
+    </div>
+    <div class="data-input">
+        <label>Czy hasło ma zawierać znaki specjalne? <input type="checkbox" id="includeSpecial"> </label>
+    </div>
+    <button id="generatePassword">Wygeneruj hasło</button>
+
+    <script>
+        document.getElementById("generatePassword").addEventListener("click", () => {
+            // Retrieve input values
+            const minLength = parseInt(document.getElementById("minLength").value);
+            const maxLength = parseInt(document.getElementById("maxLength").value);
+            const includeUppercase = document.getElementById("includeUppercase").checked;
+            const includeSpecial = document.getElementById("includeSpecial").checked;
+
+            // Validate input
+            if (!minLength || !maxLength || minLength < 1 || maxLength < minLength) {
+                alert("Proszę wprowadzić poprawne wartości długości hasła. (minimalna długość >= 1, maksymalna długość >= minimalna długość)");
+                return;
+            }
+
+            // Characters for password generation
+            const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+            const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const specialChars = "!@#$%^&*()_+[]{}|;:',.<>?";
+            const numericChars = "0123456789";
+
+            // Build character set
+            let charSet = lowercaseChars + numericChars;
+            if (includeUppercase) charSet += uppercaseChars;
+            if (includeSpecial) charSet += specialChars;
+
+            // Generate password
+            const passwordLength = Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
+            let password = "";
+            for (let i = 0; i < passwordLength; i++) {
+                const randomIndex = Math.floor(Math.random() * charSet.length);
+                password += charSet[randomIndex];
+            }
+
+            // Show password
+            alert(`Twoje wygenerowane hasło: ${password}`);
+        });
+    </script>
+</body>
+
+</html>

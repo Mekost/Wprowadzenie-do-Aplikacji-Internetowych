@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyświetlanie danych z API</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+
+        input,
+        select {
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>API Data Display</h1>
+    <div>
+        <input id="filterInput" type="text" placeholder="Filter by title..." />
+        <select id="sortSelect">
+            <option value="original">Original Order</option>
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+    </div>
+    <div id="dataContainer"></div>
+
+    <script>
+        async function fetchData() {
+            const response = await fetch('https://dummyjson.com/products');
+            const data = await response.json();
+            return data.products.slice(0, 30); // Get first 30 items
+        }
+
+        // Render table
+        function renderTable(data) {
+            const container = document.getElementById('dataContainer');
+            container.innerHTML = ""; // Clear previous content
+
+            const table = document.createElement('table');
+            const thead = document.createElement('thead');
+            const tbody = document.createElement('tbody');
+
+            // Create table headers
+            const headers = ['Image', 'Title', 'Description'];
+            const trHead = document.createElement('tr');
+            headers.forEach(header => {
+                const th = document.createElement('th');
+                th.textContent = header;
+                trHead.appendChild(th);
+            });
+            thead.appendChild(trHead);
+
+            // Create table rows
+            data.forEach(item => {
+                const tr = document.createElement('tr');
+
+                // Image
+                const tdImage = document.createElement('td');
+                const img = document.createElement('img');
+                img.src = item.thumbnail;
+                img.alt = item.title;
+                img.style.width = '50px';
+                tdImage.appendChild(img);
+                tr.appendChild(tdImage);
+
+                // Title
+                const tdTitle = document.createElement('td');
+                tdTitle.textContent = item.title;
+                tr.appendChild(tdTitle);
+
+                // Description
+                const tdDescription = document.createElement('td');
+                tdDescription.textContent = item.description;
+                tr.appendChild(tdDescription);
+
+                tbody.appendChild(tr);
+            });
+
+            table.appendChild(thead);
+            table.appendChild(tbody);
+            container.appendChild(table);
+        }
+
+        // Filter data
+        function filterData(data, query) {
+            return data.filter(item => item.title.toLowerCase().includes(query.toLowerCase()));
+        }
+
+        // Sort data
+        function sortData(data, order) {
+            if (order === 'asc') {
+                return [...data].sort((a, b) => a.title.localeCompare(b.title));
+            } else if (order === 'desc') {
+                return [...data].sort((a, b) => b.title.localeCompare(a.title));
+            }
+            return data; // Original order
+        }
+
+        // Main function
+        async function main() {
+            let originalData = await fetchData();
+            let displayedData = [...originalData];
+
+            // Initial render
+            renderTable(displayedData);
+
+            // Filter input event
+            document.getElementById('filterInput').addEventListener('input', (e) => {
+                const query = e.target.value;
+                displayedData = filterData(originalData, query);
+                renderTable(displayedData);
+            });
+
+            // Sort select event
+            document.getElementById('sortSelect').addEventListener('change', (e) => {
+                const order = e.target.value;
+                const sortedData = sortData(displayedData, order);
+                renderTable(sortedData);
+            });
+        }
+
+        // Run main function
+        main();
+    </script>
+</body>
+
+</html>
