@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+        fetch(`https://dummyjson.com/posts`)
+            .then((res) => res.json())
+            .then((data) => {
+                const T = data.posts;
+                const postContainer = document.getElementById("post-box");
+                postContainer.innerHTML = "";
+                posts
+                    .slice()
+                    .reverse()
+                    .forEach((post) => {
+                        const matchedTag = tags.find((tag) => tag.id === post.tag);
+            const tagText = matchedTag ? matchedTag.text : post.tag;
+
+            const postHtml = `<a href="${post.id}">
+        
+            <div class="main-page-post-bottom-part"> </div>
+                <div class="main-page-post-title">${post.title}</div>
+                <div class="main-page-post-tag">${post.tags}</div>
+                <div class="main-page-post-body">${post.body}</div>
+            <div class=""
+        </div></a>`;
+
+            postContainer.insertAdjacentHTML("afterbegin", postHtml);
+        });
+                    })
+
+    </script>
+</head>
+<body>
+    <div id="post-box">
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("Hello world")
+
+        let a = 5; // średnik można, ale nie trzeba
+        console.log(a);
+        let b = "hello";
+        let c = false;
+        console.log(a, b, c);
+
+        const d = 5; // stała
+        console.log(d);
+
+        let e = 50;
+        let f = 4;
+
+        if(a > b) {
+            console.log("a > b");
+        }
+
+        for(let i = 0; i < 5; i++){
+            console.log(i)
+        }
+
+        let g = 1;
+        let h = true;
+
+        if(c == d) {
+            console.log("a == b");
+        }
+
+        // === -> strict equality (wtedy 1 != true, bo porównywane są też typy)
+
+        const student = {
+            imie: "Jan",
+            wiek: 19
+        }
+
+        student.wiek = 40;
+
+        console.log(student);
+
+        // możemy zmieniać wartości mimo consta, bo zmieniamy jego parametry, a nie sam obiekt
+
+        const x = student;
+        x.imie = "Szymon"
+        // ^ robimy referencję
+
+        console.log(student);
+
+        const T = [15, 40, 60];
+        T.length; // długość tablicy
+        console.log(T.length);
+
+        T.push(25);
+        console.log(T);
+        const zKonca = T.pop();
+        console.log(T, zKonca);
+
+        T.unshift(20); // push, tylko że z przodu tabeli
+        console.log(T);
+
+        const zPoczatku = T.shift(); // pop, tylko że z początku
+        console.log(T, zPoczatku);
+
+        // funkcje
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        const wynik = add(2, 5);
+        console.log(wynik);
+
+        const add2 = (a, b) => {
+            return a - b;
+        }
+
+        const wynik2 = add2(2, 5);
+        console.log(wynik2);
+
+        function fun(a, b, op) {
+            a += 1;
+            b += 1;
+
+            return op(a, b);
+        }
+
+        const wynik3 = fun(5, 5, (a, b) => {
+            return a + b;
+        })
+
+        console.log(wynik3)
+
+        const i = 5;
+        const j = 10;
+
+        const minAB = Math.min(i, j);
+        console.log(minAB);
+        // inne funkcje: .round, .floor, .ceil, ...
+
+        const A = [10, 15, 20, 23, 29, 32];
+
+        const A2 = A.filter((x) => {
+            return x % 2 == 0;
+        })
+        // filter - funkcja "callback" ("funkcja w funkcji")
+        console.log(A2);
+
+        const A3 = A.map((x) => {
+            return x * 2;
+        })
+        // przemapowuje wszystkie wartości (w tym przypadku mnoży wszystkie przez 2)
+        console.log(A3);
+
+        
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

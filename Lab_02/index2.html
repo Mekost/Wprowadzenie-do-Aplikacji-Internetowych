@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test {
+            background-color: aquamarine;
+            color: black;
+            padding: 40px;
+            width: 200px;
+            height: 200px;
+        }
+
+        #kwadrat {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+
+        button {
+            padding: 20px 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="test">
+        Zawartość
+    </div>
+
+    <div id="parent">
+
+    </div>
+    <div id="kwadrat">
+
+    </div>
+
+    <button id="bt">
+        Kliknij!
+    </button>
+
+    <script>
+        const el = document.getElementById("test");
+        
+        const newChild2 = document.createElement("div");
+        
+       
+        const bt = document.getElementById("bt");
+        bt.addEventListener("click", (e) => {
+            const newChild = document.createElement("div");
+            newChild.addEventListener("click", (ev) => {
+                newChild.classList = "test druga trzecia";
+            })
+
+            newChild.classList = "test";
+            el.appendChild(newChild); // każdy klik tworzy kwadrat (naprawić)
+        })
+        // eventListener - tworzy rzeczy dziejące się po kliknięciu danego obiektu ("click")
+        
+        el.appendChild(newChild2);
+        console.log(el);
+        const kwadrat = document.getElementById("kwadrat");
+        const newSquare = document.createElement("kwadrat");
+        for(let i = 0; i < 10; i++) {
+            
+        }
+        // html czyta z góry na dół, więc takie skrypty lepiej dać na dole żeby dobrze działały
+        
+        // setTimeout(() => {
+        //     el.innerHTML = "Hello";
+        // }, 2000);
+
+        el.innerHTML = "<p>Hello</p>";
+        el.innerText = "<p>Nadpisanie tekstu</p>";
+        console.log("Hello");
+        console.log(el);
+
+        el.style.color = "red";
+        el.style.backgroundColor = "blue";
+        el.style["background-color"] = "yellow"; // można na 2 sposoby
+
+        // tak samo przy obiektach x.cos = x[cos]
+
+
+    </script>
+</body>
+</html>
